@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'karla';
+}
+body {
+    background-color: hsl(144.71deg 37.78% 91.18%);
+}
+:root {
+--Green-200-lighter: hsl(148, 38%, 91%); /* lighter */
+--Green-600: hsl(169, 82%, 27%);/* medium */
+--Red: hsl(0, 66%, 54%);
+--White: hsl(0, 0%, 100%);
+--Grey-500: hsl(186, 15%, 59%);/* medium */
+--Grey-900: hsl(187, 24%, 22%);/* darker */
+}
+.container {
+    padding: 50px;
+}
+form {
+    padding: 10px 25px;  
+    background-color: white;
+    border-radius: 15px;
+}
+.name {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.query {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+form > * {
+    width: 100%;
+    margin: 20px auto;
+    color: var(--Grey-500);
+}
+form > * > * {
+    width: 50%;
+}
+h2 {
+    color: var(--Grey-900);
+}
+h5 {
+    margin: 5px 0;
+}
+input {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    cursor: pointer;
+    outline-color: var(--Green-600);
+}
+.message input {
+    height: 85px;
+}
+.request input {
+    margin-top: 15px;
+}
+button {
+    height: 40px;
+    padding: 10px;
+    color: var(--White);
+    background-color: var(--Green-600);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+.pop {
+    background-color: var(--Grey-900);
+    color: var(--White);
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    padding: 15px;
+    border-radius: 10px;
+    translate: -50%;
+    font-size: 13px;
+    display: none;
+}
+.pop h4 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.pop img {
+    width: 15px;
+}
+.check input {
+    width: 16px !important;
+}
+.check {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+}
+.greenBack {
+    background: url(./assets/images/icon-checkbox-check.svg);
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: -8px;
+    display: none;
+}

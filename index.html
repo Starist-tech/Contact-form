@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="container">
+  <form action="parent">
+    <h2>Contact Us</h2>
+    <div class="name">
+      <div class="first" aria-required="This field is required">
+        <h5>First Name *</h5>
+        <input type="text"> 
+      </div>
+      <div class="last" aria-required="This field is required">
+        <h5>Last Name *</h5>
+        <input type="text"> 
+      </div>
+    </div>
+    <div class="email">
+      <h5>Email Address *</h5>
+      <input type="email" name="" id="" placeholder="Please enter a valid email address" aria-required="This field is required">
+    </div>
+    <div class="query">
+      <div class="type" aria-required="  Please select a query type">
+        <h5>Query Type *</h5>
+        <input type="text" placeholder="General Enquiry"> 
+      </div>
+      <div class="request" aria-required="This field is required">
+        <input type="text" placeholder="Support Request"> 
+      </div>
+    </div>
+    <div class="message">
+      <h5>Message *</h5>
+      <input type="text" name="" id="" aria-placeholder="This field is required">
+    </div>
+    <div class="check"> 
+      <input type="checkbox" name="" id="" aria-placeholder="To submit this form, please consent to being contacted">
+      <div class="greenBack"></div>
+      <p>I consent to being contacted by the team</p>
+    </div>  
+    <button type="submit">Submit</button>
+  </form>
+  
+  <div class="pop">
+    <h4><img src="./assets/images/icon-success-check.svg" alt=""> Message Sent!</h4>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+    
+</div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+<script src="./main.js"></script>
+</html>
