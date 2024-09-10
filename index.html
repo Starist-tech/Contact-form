@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="container">
-  <form action="parent">
+  <form action="submit">
     <h2>Contact Us</h2>
     <div class="name">
       <div class="first" aria-required="This field is required">
@@ -33,12 +33,16 @@
       <input type="email" name="" id="" placeholder="Please enter a valid email address" aria-required="This field is required">
     </div>
     <div class="query">
-      <div class="type" aria-required="  Please select a query type">
-        <h5>Query Type *</h5>
-        <input type="text" placeholder="General Enquiry"> 
-      </div>
-      <div class="request" aria-required="This field is required">
-        <input type="text" placeholder="Support Request"> 
+      <h5>Query Type *</h5>
+      <div class="radio-div">
+        <div class="type" aria-required="  Please select a query type">
+          <input type="radio" > 
+          <span class="radio-desc">General Enquiry</span>
+        </div>
+        <div class="request" aria-required="This field is required">
+          <input type="radio" placeholder=""> 
+          <span class="radio-desc">Query Request</span>
+        </div>
       </div>
     </div>
     <div class="message">
