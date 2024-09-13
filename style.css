@@ -68,6 +68,8 @@ input, textarea {
     padding: 10px;
     cursor: pointer;
     outline-color: var(--Green-600);
+    border-radius: 5px;
+    border: 1px solid gray;
 }
 .message textarea {
     height: 85px;
@@ -124,7 +126,7 @@ span.empty, span.unvalid {
     color: #ff0000e0;
     font-size: 14px;
     display: none;
-/* }
-.email span.unvalid {
-    display: block;
-} */
+}
+.check span {
+    width: 100%;
+}
