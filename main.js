@@ -30,6 +30,14 @@ function validateEmails(email) {
         return re.test(email);
         }
               
+let radios = document.querySelectorAll("input[type='radio']");
+
+radios.forEach(e => {
+        e.addEventListener('click', () => {
+        radios[0].parentElement.style.background = 'white';radios[1].parentElement.style.background = 'white';
+        if (e.checked) {e.parentElement.style.background = '#0c7d692e';} 
+                })
+        });
 
 submit.addEventListener("click", (ele) => {
         ele.preventDefault();
@@ -65,4 +73,6 @@ submit.addEventListener("click", (ele) => {
         if(checkboxInput.checked == false) {
                 checkParent.lastElementChild.style.display = 'block';
         }
+
+        // showing green background on radio and checkbox
 })

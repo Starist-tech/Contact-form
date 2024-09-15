@@ -20,39 +20,39 @@
     <h2>Contact Us</h2>
     <div class="name">
       <div class="first">
-        <h5>First Name *</h5>
-        <input type="text"> 
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName"> 
         <span class="empty">This field is required</span>
       </div>
       <div class="last">
-        <h5>Last Name *</h5>
-        <input type="text"> 
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName"> 
         <span class="empty">This field is required</span>
       </div>
     </div>
     <div class="email">
-      <h5>Email Address *</h5>
-      <input type="email" name="" id="" >
+      <label for="email"></label>Email Address *</label>
+      <input type="email" name="" id="email" >
       <span class="empty">This field is required</span>
       <span class="unvalid">Please enter a valid email address</span>
     </div>
     <div class="query">
-      <h5>Query Type *</h5>
+      <label>Query Type *</label>
       <div class="radio-div">
         <div class="type">
-          <input type="radio" name="queryType"> 
-          <span class="radio-desc">General Enquiry</span>
+          <input type="radio" name="queryType" id="queryTypes"> 
+          <label class="radio-desc" for="queryType">General Enquiry</label>
         </div>
         <div class="request">
-          <input type="radio" name="queryType" placeholder=""> 
-          <span class="radio-desc">Query Request</span>
+          <input type="radio" name="queryType" id="queryType" placeholder=""> 
+          <label class="radio-desc" for="queryType" >Query Request</label>
         </div>
       </div>
       <span class="empty">This field is required</span>
     </div>
     <div class="message">
-      <h5>Message *</h5>
-        <textarea name="" id=""></textarea>      
+      <label for="textarea">Message *</label>
+        <textarea name="" id="textarea"></textarea>      
         <span class="empty">This field is required</span>
     </div>
     <div class="check"> 
